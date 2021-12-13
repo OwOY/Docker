@@ -75,3 +75,4 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 docker-compose up -d --build
 ```
+>> -d run on background
