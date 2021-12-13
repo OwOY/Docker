@@ -55,4 +55,22 @@ mariadb
 docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d docker.io/library/mariadb
 docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
-
+## DockerCompose
+### Installation
+- Install
+```
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+- Change permission
+```
+chmod -x /usr/local/bin/docker-compose
+```
+- Create link
+```
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+### Use
+- Start&build
+```
+docker-compose up -d --build
+```
