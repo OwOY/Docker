@@ -56,6 +56,7 @@ docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d docker.i
 docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
 ## DockerCompose
+[Docker-compose version](https://docs.docker.com/compose/compose-file/)
 ### Installation
 - Install
 ```
