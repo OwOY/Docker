@@ -4,23 +4,47 @@
 
 ----  
 ## Installation
+### Ubuntu
 1. 確認有無docker
 ```
 docker
 ```
-2-1. 若有則清除
+2. 若有則清除
 ```
 apt -y remove docker docker-engine docker.io
 ```
-2-2. 若無則繼續安裝
-
-3. 下載docker
+3. 若無則下載docker
 ```
 apt -y install docker.io
 ```
-4. 安裝完成
+### CentOS
+1. 確認有無docker
+```
+docker
+```
+2. 清除docker
+```
+yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
+```
+3. 下載安裝套件
+```
+yum install -y yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+```
+4. 下載docker
+```
+yum -y install docker-ce docker-ce-cli containerd.io
+```
 
 ## Start
+- docker status
+```
+systemctl status docker
+```
+- Start docker
+```
+systemctl start docker
+```
 - Enable docker
 ```
 systemctl enable docker
