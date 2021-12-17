@@ -97,6 +97,12 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ### Use
 - Start&build
 ```
-docker-compose up -d --build
+docker-compose up -d --build # -d run on background
 ```
->> -d run on background
+### Close
+```
+docker-compose stop {docker-name} # Stop
+docker-compose down 
+```
+# Bonus
+[docker-compose useful command](https://www.cnblogs.com/moxiaoan/p/9299404.html)
