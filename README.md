@@ -73,10 +73,14 @@ docker images
 docker ps
 docker ps -a   (include stop process)
 ```
+- Build
+```
+docker build -t {manage_name} {package_name}
+```
 - Run
 ```
 mariadb
-docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d docker.io/library/mariadb
+docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d mariadb
 docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
 ## DockerCompose
