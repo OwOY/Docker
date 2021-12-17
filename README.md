@@ -52,15 +52,15 @@ systemctl enable docker
 ## Package
 - Search
 ```
-docker search f'{package_name}'
+docker search f'{image}'
 ```
 - Install
 ```
-docker pull f'{package_name}'
+docker pull f'{image}'
 ```
 - Delete
 ```
-docker rm f'{images_ID}'
+docker rm f'{image}'
 ```
 - Check images
 ```
@@ -75,7 +75,7 @@ docker ps -a   (include stop process)
 ```
 - Build
 ```
-docker build -t {manage_name} {package_name}
+docker build -t {container_name} {file_dir}
 ```
 - Run
 ```
@@ -83,6 +83,13 @@ mariadb
 docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d mariadb
 docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
+>> --name 命名  
+>> -p 指定對應port  
+>> -d images name  
+>> -e 環境變數設置  
+>> --rm 關閉則刪除container  
+>> -v 同步資料夾  
+>> -w 將資料夾匯入container  
 ## DockerCompose
 [Docker-compose version](https://docs.docker.com/compose/compose-file/)
 ### Installation
