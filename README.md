@@ -84,6 +84,9 @@ docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d mariadb
 docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
 >> --name 命名  
+>> -i 互動模式  
+>> -t(--tty) 配置一個終端機  # 一般情況下會將 -it 寫在一起
+>> -d 背景執行
 >> -p 指定對應port  
 >> -d images name  
 >> -e 環境變數設置  
