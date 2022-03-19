@@ -85,7 +85,7 @@ docker exec -it <name-of the container|container-id> <shell>  # docker exec -it 
 ```
 >> --name 命名  
 >> -i 互動模式  
->> -t(--tty) 配置一個終端機  # 一般情況下會將 -it 寫在一起
+>> -t(--tty) 配置一個終端機  # 一般情況下會將 -it 寫在一起  
 >> -d 背景執行
 >> -p 指定對應port  
 >> -d images name  
