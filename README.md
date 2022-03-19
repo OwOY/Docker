@@ -88,7 +88,7 @@ docker exec -it <name-of the container|container-id> <shell>  # docker exec -it 
 >> -d images name  
 >> -e 環境變數設置  
 >> --rm 關閉則刪除container  
->> -v 同步資料夾  
+>> -v 同步資料夾，若遇 volume 後資料夾 Permission denied ，後面加:z即可  EX : -v /foo:/foo:z
 >> -w 將資料夾匯入container  
 ## DockerCompose
 [Docker-compose version](https://docs.docker.com/compose/compose-file/)
