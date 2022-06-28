@@ -93,6 +93,16 @@ docker exec -it <name-of the container|container-id> <shell>  # docker exec -it 
 >> --rm 關閉則刪除container  
 >> -v 同步資料夾，若遇 volume 後資料夾 Permission denied ，後面加:z即可  EX : -v /foo:/foo:z
 >> -w 將資料夾匯入container  
+
+- Check logs
+```
+docker logs -f <container>
+```
+- Get log file
+```
+cat /var/lib/docker/containers/<container_id>/<container_id>-json.log
+```
+
 ## DockerCompose
 [Docker-compose version](https://docs.docker.com/compose/compose-file/)
 ### Installation
