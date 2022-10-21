@@ -102,6 +102,10 @@ docker logs -f <container>
 ```
 cat /var/lib/docker/containers/<container_id>/<container_id>-json.log
 ```
+- 查詢關鍵LOG
+```
+docker logs -f <container> 2>&1 | grep '<keyword>'
+```
 
 ## DockerCompose
 [Docker-compose version](https://docs.docker.com/compose/compose-file/)
