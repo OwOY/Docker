@@ -60,7 +60,7 @@ docker pull f'{image}'
 ```
 - Delete
 ```
-docker rm f'{image}'
+docker rmi f'{image}'
 ```
 - Check images
 ```
@@ -80,7 +80,7 @@ docker build -t {container_name} {file_dir}
 - Run
 ```
 mariadb
-docker run --name mariadb -e MYSQL_ROOT_PASSWORD="test" -p 3306:3306 -d mariadb
+docker run -itd --name {container_name} -e MYSQL_ROOT_PASSWORD="test" -p {local_port}:{image_port} {image}
 docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
 >> --name 命名  
