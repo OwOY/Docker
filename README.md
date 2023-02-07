@@ -108,7 +108,7 @@ docker logs -f <container> 2>&1 | grep '<keyword>'
 ```
 
 ## DockerCompose
-[Docker-compose version](https://docs.docker.com/compose/compose-file/)
+[Docker-compose version](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 ### Installation
 - Install
 ```
