@@ -1,5 +1,5 @@
 FROM python
 WORKDIR /app
 ADD . /app
-RUN python -m pip install -r requirements.txt
+RUN pip install -r --no-cache-dir requirements.txt
 CMD python test.py
