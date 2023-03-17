@@ -106,6 +106,10 @@ cat /var/lib/docker/containers/<container_id>/<container_id>-json.log
 ```
 docker logs -f <container> 2>&1 | grep '<keyword>'
 ```
+- 上傳檔案到container
+```
+docker cp <file_path> <container_name>:<container_target_path>
+```
 
 ## DockerCompose
 [Docker-compose version](https://docs.docker.com/compose/compose-file/compose-file-v3/)
