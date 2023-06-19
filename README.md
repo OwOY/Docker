@@ -81,7 +81,6 @@ docker build -t {container_name} {file_dir}
 ```
 # sample > mariadb
 docker run -itd --name {container_name} -e MYSQL_ROOT_PASSWORD="test" -p {local_port}:{image_port} {image}
-docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
 ```
 >> --name 命名  
 >> -i 互動模式  
@@ -92,10 +91,19 @@ docker exec -it <name-of the container|container-id> <shell>  # docker exec -it 
 >> -e 環境變數設置  
 >> --rm 關閉則刪除container  
 >> -v 同步資料夾，若遇 volume 後資料夾 Permission denied ，後面加:z即可  EX : -v /foo:/foo:z
->> -w 將資料夾匯入container  
+>> -w 將資料夾匯入container
+>> --network <network> 使用網路環境
+- exec
+```
+docker exec -it <name-of the container|container-id> <shell>  # docker exec -it mariadb bash
+```
 - Exist container connect network
 ```
 docker network connect <network_name> <container>
+```
+- Exist container disconnect network
+```
+docker network disconnect <network_name> <container>
 ```
 - Check logs
 ```
