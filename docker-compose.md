@@ -1,7 +1,7 @@
 <img src='img/docker-compose.png' width='70%' style="display:block; margin:auto">
 
 # docker-compose version  
-    ### [version link](https://docs.docker.com/compose/compose-file/compose-file-v3/)
+## [version link](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 <br>
 
 # Install
