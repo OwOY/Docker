@@ -100,11 +100,19 @@
     - -w  
     將資料夾匯入container
     - --restart  
-    自動重啟 ex: --restart=always
+    重啟設定 ex: --restart=always
     - --network  
     使用網路環境
     -  --rm  
-    關閉則刪除container  
+    關閉則刪除container 
+- stop
+    ```
+    docker stop <container_name>
+    ```
+- remove
+    ```
+    docker rm <container_name>
+    ```
 ### 進入container
 - exec
     ```

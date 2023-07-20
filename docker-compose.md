@@ -61,6 +61,8 @@ services: # 建立service模組
     restart: always # 設定是否自動重啟
     environment: # 設定環境變數
       - TZ=Asia/Taipei
+    env_file: xxx.cfg # 讀取環境變數檔案
+    command: ["cat", "test.py"] # 執行指令
     networks: # 設定網域
       - apm
 
