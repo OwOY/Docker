@@ -1,8 +1,0 @@
-file_uploads = On
-memory_limit = 300M
-upload_max_filesize = 256M
-post_max_size = 256M
-max_execution_time = 600
-date.timezone = UTC+8
-max_input_time = 600
-max_input_vars = 5000
