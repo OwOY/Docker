@@ -113,6 +113,10 @@
     ```
     docker rm <container_name>
     ```
+- 清除所有docker快取、無用的...etc
+    ```
+    docker system prune -a -f
+    ```
 ### 進入container
 - exec
     ```
